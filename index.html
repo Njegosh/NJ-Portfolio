@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
     <title>Document</title>
 </head>
+
 <body class=" bg-[#0C0C0C] w-full h-screen font-Quicksand text-white">
     <div class="flex h-full w-full">
         <!-- SIDE NAV -->
-        <div class="min-w-60 h-full w-60 bg-woodsmoke-950 p-6 flex flex-col justify-between">
+        <div class="min-w-60 h-svh fixed top-0 w-60 bg-woodsmoke-950 p-6 flex flex-col justify-between">
             <div class="flex flex-col gap-2">
-                <img src="./img/logo.png" alt="" class="w-full">
-                <a href="#" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
-                hover:bg-jungle-green-950 border hover:border-jungle-green-500
-                bg-gradient-to-r from-jungle-green-600 to-transparent border-jungle-green-500"
-                >
-                    <img src="./img/icons/home.svg" alt="">
+                <img src="../../img/logo.png" alt="" class="w-full">
+                <a href="../../index.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
+                hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
+                    <img src="../../img/icons/home.svg" alt="">
                     Home
                 </a>
-                <a href="./projects.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
+                <a href="../../projects.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
                 hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
-                    <img src="./img/icons/gamepad.svg" alt="">
+                    <img src="../../img/icons/gamepad.svg" alt="">
                     Projects
                 </a>
-                <a href="./about.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
+                <a href="../../about.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
                 hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
-                    <img src="./img/icons/user-alt.svg" alt="">
+                    <img src="../../img/icons/user-alt.svg" alt="">
                     About
                 </a>
             </div>
 
             <div class="flex justify-between">
-                <a href="./about" class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75"> 
-                    <img src="./img/icons/instagram.svg" alt="">
+                <a href="#"
+                    class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
+                    <img src="../../img/icons/instagram.svg" alt="">
                 </a>
-                <a href="#" class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75"> 
-                    <img src="./img/icons/linkedin.svg" alt="">
+                <a href="#"
+                    class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
+                    <img src="../../img/icons/linkedin.svg" alt="">
                 </a>
-                <a href="#" class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75"> 
-                    <img src="./img/icons/github.svg" alt="">
+                <a href="#"
+                    class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
+                    <img src="../../img/icons/github.svg" alt="">
                 </a>
             </div>
         </div>
 
+        <div class="min-w-60 h-svh top-0 w-60 bg-woodsmoke-950">
+        </div>
+
         <!-- CONTENT -->
         <div class="flex w-full h-full p-12 flex-col font-thin text-woodsmoke-400">
-            <span class="font-semibold text-4xl pb-4 text-white">Nebojša Jeremić</span>
-            <span>Fascinated by computer graphics. <br>Always wanting to break the barrier between the artist and computer capabilities.</span>
+            <div class="flex flex-col gap-4">
+                <span class="font-semibold text-4xl text-white">Nebojša Jeremić</span>
 
+                <span class="text-xl"><b class="text-jungle-green-400">Programmer</b> in mind and <b
+                        class="text-jungle-green-400">Artist</b> in heart</span>
+
+
+                <span>Fascinated by computer graphics. <br>Always wanting to break the barrier between the artist and
+                    computer capabilities.</span>
+
+                <span>I specialize in using existing tools or
+                    making new ones for creating beautiful experiances.</span>
+            </div>
 
             <h2 class="font-semibold text-4xl text-white mt-6 pb-8">My Projects</h2>
             <div class="grid grid-flow-row grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
@@ -59,22 +75,27 @@
                 hover:scale-105 hover:shadow-xl hover:shadow-opacity-jungle-green-300 
                 group ease-out
                 ">
-                    <img src="./projects/Zomboiz/chase.png" class="w-full h-48 rounded-xl object-cover group-hover:shadow-lg group-hover:shadow-opacity-jungle-green-100" alt="">
+                    <img src="./projects/Zomboiz/chase.png"
+                        class="w-full h-48 rounded-xl object-cover group-hover:shadow-lg group-hover:shadow-opacity-jungle-green-100"
+                        alt="">
                     <span class="font-semibold text-3xl text-white">ZomboiZ: survive</span>
                     <div class="flex gap-2 *:bg-jungle-green-950 text-jungle-green-300 *:px-3 *:py-1 *:rounded-full">
-                        
+
                         <div class="flex gap-2">
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="*:*:fill-jungle-green-300" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                class="*:*:fill-jungle-green-300" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_64_678)">
-                                <path d="M18.7527 6.25H6.24992C5.21942 6.24985 4.20487 6.50451 3.2966 6.99131C2.38832 7.47811 1.61451 8.18193 1.04405 9.04013C0.473582 9.89833 0.124171 10.8843 0.0269194 11.9102C-0.0703321 12.9361 0.0875936 13.9701 0.486637 14.9202C0.88568 15.8703 1.51346 16.707 2.31408 17.3558C3.11471 18.0046 4.06333 18.4453 5.0755 18.6388C6.08767 18.8323 7.13199 18.7725 8.11546 18.4648C9.09894 18.1571 9.99107 17.6109 10.7124 16.875H14.2874C15.0087 17.6108 15.9007 18.1569 16.884 18.4647C17.8674 18.7725 18.9116 18.8323 19.9237 18.639C20.9357 18.4456 21.8843 18.005 22.685 17.3564C23.4856 16.7078 24.1135 15.8714 24.5127 14.9215C24.9119 13.9716 25.07 12.9377 24.9731 11.9119C24.8761 10.8861 24.527 9.90013 23.9569 9.04184C23.3868 8.18355 22.6133 7.47953 21.7053 6.99244C20.7974 6.50535 19.783 6.2503 18.7527 6.25ZM9.68742 12.9688C9.68742 13.0931 9.63803 13.2123 9.55012 13.3002C9.46222 13.3881 9.34299 13.4375 9.21867 13.4375H7.18742V15.4688C7.18742 15.5931 7.13803 15.7123 7.05012 15.8002C6.96222 15.8881 6.84299 15.9375 6.71867 15.9375H5.78117C5.65685 15.9375 5.53762 15.8881 5.44971 15.8002C5.3618 15.7123 5.31242 15.5931 5.31242 15.4688V13.4375H3.28117C3.15685 13.4375 3.03762 13.3881 2.94971 13.3002C2.8618 13.2123 2.81242 13.0931 2.81242 12.9688V12.0312C2.81242 11.9069 2.8618 11.7877 2.94971 11.6998C3.03762 11.6119 3.15685 11.5625 3.28117 11.5625H5.31242V9.53125C5.31242 9.40693 5.3618 9.2877 5.44971 9.19979C5.53762 9.11189 5.65685 9.0625 5.78117 9.0625H6.71867C6.84299 9.0625 6.96222 9.11189 7.05012 9.19979C7.13803 9.2877 7.18742 9.40693 7.18742 9.53125V11.5625H9.21867C9.34299 11.5625 9.46222 11.6119 9.55012 11.6998C9.63803 11.7877 9.68742 11.9069 9.68742 12.0312V12.9688ZM18.1249 15.9375C17.8159 15.9375 17.5138 15.8459 17.2568 15.6742C16.9999 15.5025 16.7996 15.2585 16.6814 14.9729C16.5631 14.6874 16.5322 14.3733 16.5924 14.0702C16.6527 13.7671 16.8015 13.4887 17.0201 13.2701C17.2386 13.0516 17.517 12.9028 17.8201 12.8425C18.1232 12.7822 18.4374 12.8132 18.7229 12.9314C19.0084 13.0497 19.2524 13.25 19.4241 13.5069C19.5958 13.7639 19.6874 14.066 19.6874 14.375C19.6874 14.7894 19.5228 15.1868 19.2298 15.4799C18.9367 15.7729 18.5393 15.9375 18.1249 15.9375ZM20.6249 12.1875C20.3159 12.1875 20.0138 12.0959 19.7568 11.9242C19.4999 11.7525 19.2996 11.5085 19.1814 11.2229C19.0631 10.9374 19.0322 10.6233 19.0924 10.3202C19.1527 10.0171 19.3015 9.73867 19.5201 9.52015C19.7386 9.30163 20.017 9.15281 20.3201 9.09252C20.6232 9.03223 20.9373 9.06318 21.2229 9.18144C21.5084 9.2997 21.7524 9.49997 21.9241 9.75692C22.0958 10.0139 22.1874 10.316 22.1874 10.625C22.1874 11.0394 22.0228 11.4368 21.7298 11.7299C21.4367 12.0229 21.0393 12.1875 20.6249 12.1875Z" fill="white"/>
+                                    <path
+                                        d="M18.7527 6.25H6.24992C5.21942 6.24985 4.20487 6.50451 3.2966 6.99131C2.38832 7.47811 1.61451 8.18193 1.04405 9.04013C0.473582 9.89833 0.124171 10.8843 0.0269194 11.9102C-0.0703321 12.9361 0.0875936 13.9701 0.486637 14.9202C0.88568 15.8703 1.51346 16.707 2.31408 17.3558C3.11471 18.0046 4.06333 18.4453 5.0755 18.6388C6.08767 18.8323 7.13199 18.7725 8.11546 18.4648C9.09894 18.1571 9.99107 17.6109 10.7124 16.875H14.2874C15.0087 17.6108 15.9007 18.1569 16.884 18.4647C17.8674 18.7725 18.9116 18.8323 19.9237 18.639C20.9357 18.4456 21.8843 18.005 22.685 17.3564C23.4856 16.7078 24.1135 15.8714 24.5127 14.9215C24.9119 13.9716 25.07 12.9377 24.9731 11.9119C24.8761 10.8861 24.527 9.90013 23.9569 9.04184C23.3868 8.18355 22.6133 7.47953 21.7053 6.99244C20.7974 6.50535 19.783 6.2503 18.7527 6.25ZM9.68742 12.9688C9.68742 13.0931 9.63803 13.2123 9.55012 13.3002C9.46222 13.3881 9.34299 13.4375 9.21867 13.4375H7.18742V15.4688C7.18742 15.5931 7.13803 15.7123 7.05012 15.8002C6.96222 15.8881 6.84299 15.9375 6.71867 15.9375H5.78117C5.65685 15.9375 5.53762 15.8881 5.44971 15.8002C5.3618 15.7123 5.31242 15.5931 5.31242 15.4688V13.4375H3.28117C3.15685 13.4375 3.03762 13.3881 2.94971 13.3002C2.8618 13.2123 2.81242 13.0931 2.81242 12.9688V12.0312C2.81242 11.9069 2.8618 11.7877 2.94971 11.6998C3.03762 11.6119 3.15685 11.5625 3.28117 11.5625H5.31242V9.53125C5.31242 9.40693 5.3618 9.2877 5.44971 9.19979C5.53762 9.11189 5.65685 9.0625 5.78117 9.0625H6.71867C6.84299 9.0625 6.96222 9.11189 7.05012 9.19979C7.13803 9.2877 7.18742 9.40693 7.18742 9.53125V11.5625H9.21867C9.34299 11.5625 9.46222 11.6119 9.55012 11.6998C9.63803 11.7877 9.68742 11.9069 9.68742 12.0312V12.9688ZM18.1249 15.9375C17.8159 15.9375 17.5138 15.8459 17.2568 15.6742C16.9999 15.5025 16.7996 15.2585 16.6814 14.9729C16.5631 14.6874 16.5322 14.3733 16.5924 14.0702C16.6527 13.7671 16.8015 13.4887 17.0201 13.2701C17.2386 13.0516 17.517 12.9028 17.8201 12.8425C18.1232 12.7822 18.4374 12.8132 18.7229 12.9314C19.0084 13.0497 19.2524 13.25 19.4241 13.5069C19.5958 13.7639 19.6874 14.066 19.6874 14.375C19.6874 14.7894 19.5228 15.1868 19.2298 15.4799C18.9367 15.7729 18.5393 15.9375 18.1249 15.9375ZM20.6249 12.1875C20.3159 12.1875 20.0138 12.0959 19.7568 11.9242C19.4999 11.7525 19.2996 11.5085 19.1814 11.2229C19.0631 10.9374 19.0322 10.6233 19.0924 10.3202C19.1527 10.0171 19.3015 9.73867 19.5201 9.52015C19.7386 9.30163 20.017 9.15281 20.3201 9.09252C20.6232 9.03223 20.9373 9.06318 21.2229 9.18144C21.5084 9.2997 21.7524 9.49997 21.9241 9.75692C22.0958 10.0139 22.1874 10.316 22.1874 10.625C22.1874 11.0394 22.0228 11.4368 21.7298 11.7299C21.4367 12.0229 21.0393 12.1875 20.6249 12.1875Z"
+                                        fill="white" />
                                 </g>
                                 <defs>
-                                <clipPath id="clip0_64_678">
-                                <rect width="25" height="25" fill="white"/>
-                                </clipPath>
+                                    <clipPath id="clip0_64_678">
+                                        <rect width="25" height="25" fill="white" />
+                                    </clipPath>
                                 </defs>
                             </svg>
-                                
+
                             Game
                         </div>
                         <div class="flex gap-2">University</div>
@@ -87,15 +108,20 @@
                 hover:scale-105 hover:shadow-xl hover:shadow-opacity-jungle-green-300 
                 group ease-out
                 ">
-                    <img src="./projects/Crt/cover.png" class="w-full h-48 rounded-xl object-cover group-hover:shadow-lg group-hover:shadow-opacity-jungle-green-100" alt="">
+                    <img src="./projects/Crt/cover.png"
+                        class="w-full h-48 rounded-xl object-cover group-hover:shadow-lg group-hover:shadow-opacity-jungle-green-100"
+                        alt="">
                     <span class="font-semibold text-3xl text-white">CRT Pixel Shader</span>
                     <div class="flex gap-2 *:bg-jungle-green-950 text-jungle-green-300 *:px-3 *:py-1 *:rounded-full">
-                        
+
                         <div class="flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-jungle-green-300"  viewBox="0 0 512 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-jungle-green-300"
+                                viewBox="0 0 512 512">
                                 <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
-                                
+                                <path
+                                    d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
+                            </svg>
+
                             Graphics
                         </div>
                         <div class="flex gap-2">University</div>
@@ -108,26 +134,30 @@
                 
                 group
                 ">
-                    <div class=" bg-woodsmoke-950 bg-opacity-25 backdrop-blur-xl absolute rounded-xl left-4 top-4 right-4 bottom-4 hover:top-0 hover:left-0 hover:bottom-0 hover:right-0 hover:rounded-3xl hover:backdrop-blur-2xl duration-200 flex justify-center items-center border border-woodsmoke-900 flex-col gap-1">
+                    <div
+                        class=" bg-woodsmoke-950 bg-opacity-25 backdrop-blur-xl absolute rounded-xl left-4 top-4 right-4 bottom-4 hover:top-0 hover:left-0 hover:bottom-0 hover:right-0 hover:rounded-3xl hover:backdrop-blur-2xl duration-200 flex justify-center items-center border border-woodsmoke-900 flex-col gap-1">
                         <span class="text-4xl">Work in progess</span>
                         <span>Coming soon...</span>
                     </div>
                     <img src="./projects/Zomboiz/chase.png" class="w-full h-48 rounded-xl object-cover" alt="">
                     <span class="font-semibold text-3xl text-white">ZomboiZ: survive</span>
                     <div class="flex gap-2 *:bg-jungle-green-950 text-jungle-green-300 *:px-3 *:py-1 *:rounded-full">
-                        
+
                         <div class="flex gap-2">
-                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none" class="*:*:fill-jungle-green-300" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                class="*:*:fill-jungle-green-300" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_64_678)">
-                                <path d="M18.7527 6.25H6.24992C5.21942 6.24985 4.20487 6.50451 3.2966 6.99131C2.38832 7.47811 1.61451 8.18193 1.04405 9.04013C0.473582 9.89833 0.124171 10.8843 0.0269194 11.9102C-0.0703321 12.9361 0.0875936 13.9701 0.486637 14.9202C0.88568 15.8703 1.51346 16.707 2.31408 17.3558C3.11471 18.0046 4.06333 18.4453 5.0755 18.6388C6.08767 18.8323 7.13199 18.7725 8.11546 18.4648C9.09894 18.1571 9.99107 17.6109 10.7124 16.875H14.2874C15.0087 17.6108 15.9007 18.1569 16.884 18.4647C17.8674 18.7725 18.9116 18.8323 19.9237 18.639C20.9357 18.4456 21.8843 18.005 22.685 17.3564C23.4856 16.7078 24.1135 15.8714 24.5127 14.9215C24.9119 13.9716 25.07 12.9377 24.9731 11.9119C24.8761 10.8861 24.527 9.90013 23.9569 9.04184C23.3868 8.18355 22.6133 7.47953 21.7053 6.99244C20.7974 6.50535 19.783 6.2503 18.7527 6.25ZM9.68742 12.9688C9.68742 13.0931 9.63803 13.2123 9.55012 13.3002C9.46222 13.3881 9.34299 13.4375 9.21867 13.4375H7.18742V15.4688C7.18742 15.5931 7.13803 15.7123 7.05012 15.8002C6.96222 15.8881 6.84299 15.9375 6.71867 15.9375H5.78117C5.65685 15.9375 5.53762 15.8881 5.44971 15.8002C5.3618 15.7123 5.31242 15.5931 5.31242 15.4688V13.4375H3.28117C3.15685 13.4375 3.03762 13.3881 2.94971 13.3002C2.8618 13.2123 2.81242 13.0931 2.81242 12.9688V12.0312C2.81242 11.9069 2.8618 11.7877 2.94971 11.6998C3.03762 11.6119 3.15685 11.5625 3.28117 11.5625H5.31242V9.53125C5.31242 9.40693 5.3618 9.2877 5.44971 9.19979C5.53762 9.11189 5.65685 9.0625 5.78117 9.0625H6.71867C6.84299 9.0625 6.96222 9.11189 7.05012 9.19979C7.13803 9.2877 7.18742 9.40693 7.18742 9.53125V11.5625H9.21867C9.34299 11.5625 9.46222 11.6119 9.55012 11.6998C9.63803 11.7877 9.68742 11.9069 9.68742 12.0312V12.9688ZM18.1249 15.9375C17.8159 15.9375 17.5138 15.8459 17.2568 15.6742C16.9999 15.5025 16.7996 15.2585 16.6814 14.9729C16.5631 14.6874 16.5322 14.3733 16.5924 14.0702C16.6527 13.7671 16.8015 13.4887 17.0201 13.2701C17.2386 13.0516 17.517 12.9028 17.8201 12.8425C18.1232 12.7822 18.4374 12.8132 18.7229 12.9314C19.0084 13.0497 19.2524 13.25 19.4241 13.5069C19.5958 13.7639 19.6874 14.066 19.6874 14.375C19.6874 14.7894 19.5228 15.1868 19.2298 15.4799C18.9367 15.7729 18.5393 15.9375 18.1249 15.9375ZM20.6249 12.1875C20.3159 12.1875 20.0138 12.0959 19.7568 11.9242C19.4999 11.7525 19.2996 11.5085 19.1814 11.2229C19.0631 10.9374 19.0322 10.6233 19.0924 10.3202C19.1527 10.0171 19.3015 9.73867 19.5201 9.52015C19.7386 9.30163 20.017 9.15281 20.3201 9.09252C20.6232 9.03223 20.9373 9.06318 21.2229 9.18144C21.5084 9.2997 21.7524 9.49997 21.9241 9.75692C22.0958 10.0139 22.1874 10.316 22.1874 10.625C22.1874 11.0394 22.0228 11.4368 21.7298 11.7299C21.4367 12.0229 21.0393 12.1875 20.6249 12.1875Z" fill="white"/>
+                                    <path
+                                        d="M18.7527 6.25H6.24992C5.21942 6.24985 4.20487 6.50451 3.2966 6.99131C2.38832 7.47811 1.61451 8.18193 1.04405 9.04013C0.473582 9.89833 0.124171 10.8843 0.0269194 11.9102C-0.0703321 12.9361 0.0875936 13.9701 0.486637 14.9202C0.88568 15.8703 1.51346 16.707 2.31408 17.3558C3.11471 18.0046 4.06333 18.4453 5.0755 18.6388C6.08767 18.8323 7.13199 18.7725 8.11546 18.4648C9.09894 18.1571 9.99107 17.6109 10.7124 16.875H14.2874C15.0087 17.6108 15.9007 18.1569 16.884 18.4647C17.8674 18.7725 18.9116 18.8323 19.9237 18.639C20.9357 18.4456 21.8843 18.005 22.685 17.3564C23.4856 16.7078 24.1135 15.8714 24.5127 14.9215C24.9119 13.9716 25.07 12.9377 24.9731 11.9119C24.8761 10.8861 24.527 9.90013 23.9569 9.04184C23.3868 8.18355 22.6133 7.47953 21.7053 6.99244C20.7974 6.50535 19.783 6.2503 18.7527 6.25ZM9.68742 12.9688C9.68742 13.0931 9.63803 13.2123 9.55012 13.3002C9.46222 13.3881 9.34299 13.4375 9.21867 13.4375H7.18742V15.4688C7.18742 15.5931 7.13803 15.7123 7.05012 15.8002C6.96222 15.8881 6.84299 15.9375 6.71867 15.9375H5.78117C5.65685 15.9375 5.53762 15.8881 5.44971 15.8002C5.3618 15.7123 5.31242 15.5931 5.31242 15.4688V13.4375H3.28117C3.15685 13.4375 3.03762 13.3881 2.94971 13.3002C2.8618 13.2123 2.81242 13.0931 2.81242 12.9688V12.0312C2.81242 11.9069 2.8618 11.7877 2.94971 11.6998C3.03762 11.6119 3.15685 11.5625 3.28117 11.5625H5.31242V9.53125C5.31242 9.40693 5.3618 9.2877 5.44971 9.19979C5.53762 9.11189 5.65685 9.0625 5.78117 9.0625H6.71867C6.84299 9.0625 6.96222 9.11189 7.05012 9.19979C7.13803 9.2877 7.18742 9.40693 7.18742 9.53125V11.5625H9.21867C9.34299 11.5625 9.46222 11.6119 9.55012 11.6998C9.63803 11.7877 9.68742 11.9069 9.68742 12.0312V12.9688ZM18.1249 15.9375C17.8159 15.9375 17.5138 15.8459 17.2568 15.6742C16.9999 15.5025 16.7996 15.2585 16.6814 14.9729C16.5631 14.6874 16.5322 14.3733 16.5924 14.0702C16.6527 13.7671 16.8015 13.4887 17.0201 13.2701C17.2386 13.0516 17.517 12.9028 17.8201 12.8425C18.1232 12.7822 18.4374 12.8132 18.7229 12.9314C19.0084 13.0497 19.2524 13.25 19.4241 13.5069C19.5958 13.7639 19.6874 14.066 19.6874 14.375C19.6874 14.7894 19.5228 15.1868 19.2298 15.4799C18.9367 15.7729 18.5393 15.9375 18.1249 15.9375ZM20.6249 12.1875C20.3159 12.1875 20.0138 12.0959 19.7568 11.9242C19.4999 11.7525 19.2996 11.5085 19.1814 11.2229C19.0631 10.9374 19.0322 10.6233 19.0924 10.3202C19.1527 10.0171 19.3015 9.73867 19.5201 9.52015C19.7386 9.30163 20.017 9.15281 20.3201 9.09252C20.6232 9.03223 20.9373 9.06318 21.2229 9.18144C21.5084 9.2997 21.7524 9.49997 21.9241 9.75692C22.0958 10.0139 22.1874 10.316 22.1874 10.625C22.1874 11.0394 22.0228 11.4368 21.7298 11.7299C21.4367 12.0229 21.0393 12.1875 20.6249 12.1875Z"
+                                        fill="white" />
                                 </g>
                                 <defs>
-                                <clipPath id="clip0_64_678">
-                                <rect width="25" height="25" fill="white"/>
-                                </clipPath>
+                                    <clipPath id="clip0_64_678">
+                                        <rect width="25" height="25" fill="white" />
+                                    </clipPath>
                                 </defs>
                             </svg>
-                                
+
                             Game
                         </div>
                         <div class="flex gap-2">University</div>
@@ -140,4 +170,5 @@
 
     </div>
 </body>
+
 </html>
