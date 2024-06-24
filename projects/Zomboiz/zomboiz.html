@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/output.css">
+    <title>Document</title>
+</head>
+
+<body class=" bg-[#0C0C0C] w-full h-screen font-Quicksand text-white">
+    <div class="flex h-full w-full">
+        <!-- SIDE NAV -->
+        <div class="min-w-60 h-svh fixed top-0 w-60 bg-woodsmoke-950 p-6 flex flex-col justify-between">
+            <div class="flex flex-col gap-2">
+                <img src="../../img/logo.png" alt="" class="w-full">
+                <a href="../../index.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
+                hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
+                    <img src="../../img/icons/home.svg" alt="">
+                    Home
+                </a>
+                <a href="../../projects.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
+                hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
+                    <img src="../../img/icons/gamepad.svg" alt="">
+                    Projects
+                </a>
+                <a href="../../about.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
+                hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
+                    <img src="../../img/icons/user-alt.svg" alt="">
+                    About
+                </a>
+            </div>
+
+            <div class="flex justify-between">
+                <a href="#"
+                    class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
+                    <img src="../../img/icons/instagram.svg" alt="">
+                </a>
+                <a href="#"
+                    class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
+                    <img src="../../img/icons/linkedin.svg" alt="">
+                </a>
+                <a href="#"
+                    class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
+                    <img src="../../img/icons/github.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+        <div class="min-w-60 h-svh top-0 w-60 bg-woodsmoke-950">
+        </div>
+
+        <!-- CONTENT -->
+        <div class="flex w-full h-full p-12 gap-8 flex-col font-thin text-woodsmoke-400">
+            <div class="flex flex-col gap-4 items-center pb-40">
+                <div class="flex flex-col gap-4 w-full">
+                    <div class="flex justify-between">
+                        <span class="font-semibold text-4xl text-white">ZomboiZ: survive</span>
+                        <span>10th Jul 2023</span>
+                    </div>
+                    <div class="flex gap-2 *:bg-jungle-green-950 text-jungle-green-300 *:px-3 *:py-1 *:rounded-full">
+
+                        <div class="flex gap-2">
+                            <svg width="25" height="25" viewBox="0 0 25 25" fill="none"
+                                class="*:*:fill-jungle-green-300" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_64_678)">
+                                    <path
+                                        d="M18.7527 6.25H6.24992C5.21942 6.24985 4.20487 6.50451 3.2966 6.99131C2.38832 7.47811 1.61451 8.18193 1.04405 9.04013C0.473582 9.89833 0.124171 10.8843 0.0269194 11.9102C-0.0703321 12.9361 0.0875936 13.9701 0.486637 14.9202C0.88568 15.8703 1.51346 16.707 2.31408 17.3558C3.11471 18.0046 4.06333 18.4453 5.0755 18.6388C6.08767 18.8323 7.13199 18.7725 8.11546 18.4648C9.09894 18.1571 9.99107 17.6109 10.7124 16.875H14.2874C15.0087 17.6108 15.9007 18.1569 16.884 18.4647C17.8674 18.7725 18.9116 18.8323 19.9237 18.639C20.9357 18.4456 21.8843 18.005 22.685 17.3564C23.4856 16.7078 24.1135 15.8714 24.5127 14.9215C24.9119 13.9716 25.07 12.9377 24.9731 11.9119C24.8761 10.8861 24.527 9.90013 23.9569 9.04184C23.3868 8.18355 22.6133 7.47953 21.7053 6.99244C20.7974 6.50535 19.783 6.2503 18.7527 6.25ZM9.68742 12.9688C9.68742 13.0931 9.63803 13.2123 9.55012 13.3002C9.46222 13.3881 9.34299 13.4375 9.21867 13.4375H7.18742V15.4688C7.18742 15.5931 7.13803 15.7123 7.05012 15.8002C6.96222 15.8881 6.84299 15.9375 6.71867 15.9375H5.78117C5.65685 15.9375 5.53762 15.8881 5.44971 15.8002C5.3618 15.7123 5.31242 15.5931 5.31242 15.4688V13.4375H3.28117C3.15685 13.4375 3.03762 13.3881 2.94971 13.3002C2.8618 13.2123 2.81242 13.0931 2.81242 12.9688V12.0312C2.81242 11.9069 2.8618 11.7877 2.94971 11.6998C3.03762 11.6119 3.15685 11.5625 3.28117 11.5625H5.31242V9.53125C5.31242 9.40693 5.3618 9.2877 5.44971 9.19979C5.53762 9.11189 5.65685 9.0625 5.78117 9.0625H6.71867C6.84299 9.0625 6.96222 9.11189 7.05012 9.19979C7.13803 9.2877 7.18742 9.40693 7.18742 9.53125V11.5625H9.21867C9.34299 11.5625 9.46222 11.6119 9.55012 11.6998C9.63803 11.7877 9.68742 11.9069 9.68742 12.0312V12.9688ZM18.1249 15.9375C17.8159 15.9375 17.5138 15.8459 17.2568 15.6742C16.9999 15.5025 16.7996 15.2585 16.6814 14.9729C16.5631 14.6874 16.5322 14.3733 16.5924 14.0702C16.6527 13.7671 16.8015 13.4887 17.0201 13.2701C17.2386 13.0516 17.517 12.9028 17.8201 12.8425C18.1232 12.7822 18.4374 12.8132 18.7229 12.9314C19.0084 13.0497 19.2524 13.25 19.4241 13.5069C19.5958 13.7639 19.6874 14.066 19.6874 14.375C19.6874 14.7894 19.5228 15.1868 19.2298 15.4799C18.9367 15.7729 18.5393 15.9375 18.1249 15.9375ZM20.6249 12.1875C20.3159 12.1875 20.0138 12.0959 19.7568 11.9242C19.4999 11.7525 19.2996 11.5085 19.1814 11.2229C19.0631 10.9374 19.0322 10.6233 19.0924 10.3202C19.1527 10.0171 19.3015 9.73867 19.5201 9.52015C19.7386 9.30163 20.017 9.15281 20.3201 9.09252C20.6232 9.03223 20.9373 9.06318 21.2229 9.18144C21.5084 9.2997 21.7524 9.49997 21.9241 9.75692C22.0958 10.0139 22.1874 10.316 22.1874 10.625C22.1874 11.0394 22.0228 11.4368 21.7298 11.7299C21.4367 12.0229 21.0393 12.1875 20.6249 12.1875Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_64_678">
+                                        <rect width="25" height="25" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+
+                            Game
+                        </div>
+                        <div class="flex gap-2">University</div>
+                    </div>
+                    <img src="./chase.png" alt="" class="rounded-xl w-full h-96 object-cover">
+                </div>
+                <div class="flex flex-col gap-8 max-w-4xl">
+                    <span>
+                        Latest <b>University</b> project, a classic top down fast action survival shooter.
+                        Run around, explore the city full of Zombies, collect weapons and gear and slay your way though.
+                    </span>
+                    <span>
+                        <b>My work:</b> Game Design Documentation, Game Design, Coding, Custom Shaders, Character
+                        modeling &
+                        Animation, UI, VFX
+                    </span>
+
+                    <div class="flex w-full justify-center gap-2 py-4">
+                        <a href="#"
+                            class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 outline outline-1 outline-woodsmoke-900 hover:outline-woodsmoke-400 hover:bg-woodsmoke-900">
+                            <img src="../../img/icons/github.svg" alt="" class="w-6">
+                            GitHub
+                        </a>
+                        <a href="#"
+                            class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 bg-jungle-green-700 hover:bg-jungle-green-400">
+                            Download Game
+                        </a>
+                    </div>
+
+                    <h2 class="font-semibold text-4xl text-white">Visuals</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 items-stretch auto-rows-max">
+                        <div class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:hidden">
+                            <img src="./noc-moj.png"
+                                class="w-full h-full aspect-square absolute object-left object-cover">
+                            <img src="./dan-moj.png"
+                                class="w-1/5 h-full aspect-square absolute object-left object-cover nj-anim">
+                        </div>
+                        <div class="flex flex-col gap-4 col-span-1 md:col-span-2 lg:col-span-1">
+                            <h2 class=" text-2xl text-white">Materials & Shaders</h2>
+                            <p>
+                                To make all characters appealing and to make them stand out I made a custom shader using
+                                Shader Graph and Code. The characters have a Rim Light that reacts to lighting around
+                                them.
+                                It works great with Day and Night System, various light sources from street lights to
+                                explosions in combat.
+                            </p>
+                            <p>
+                                The faces have a glow, so you can see them even at night, and it gives them a bit of
+                                spookiness.
+                            </p>
+                            <p>
+                                And all the zombies use the same material, which also includes blood, bones and the
+                                black
+                                outline around them, with GPU instancing the performance is easily obtained.
+                            </p>
+                        </div>
+
+                        <div class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:flex hidden">
+                            <img src="./noc-moj.png"
+                                class="w-full h-full aspect-square absolute object-left object-cover">
+                            <img src="./dan-moj.png"
+                                class="w-1/5 h-full aspect-square absolute object-left object-cover nj-anim">
+                        </div>
+
+                        <!-- ROW -->
+
+                        <div class="flex flex-col justify-between gap-4">
+                            <div class="flex flex-col gap-4">
+                                <h2 class=" text-2xl text-white">Environment & Lighting</h2>
+                                <p>
+                                    Day and Night system, which make the game feel alive and dynamic. Lens flares and
+                                    other effects that make the action feel flashy.
+                                </p>
+                            </div>
+                            <img src="./dan-moj.png" class="w-full aspect-square rounded-2xl object-cover ">
+                        </div>
+
+                        <div class="flex flex-col justify-between gap-4">
+                            <div class="flex flex-col gap-4">
+                                <h2 class=" text-2xl text-white">VFX</h2>
+                                <p>
+                                    Particle systems are important, and they make things happening feel
+                                    impactful.Weapons feel powerful and fun to shoot, enemies explode on death in many
+                                    parts which makes them a lot of fun to kill.
+                                </p>
+                            </div>
+
+                            <img src="./dan-moj.png" class="w-full aspect-square rounded-2xl object-cover">
+                        </div>
+
+                        <!-- ROW -->
+
+                        <div class="flex flex-col justify-between gap-4">
+                            <div class="flex flex-col gap-4">
+                                <h2 class=" text-2xl text-white">Animations</h2>
+                                <p>
+                                    Characters have animation states, player has multiple landing animations depending
+                                    on the force of the fall, weapons have their own animations that are implemented
+                                    with animation layers.
+                                </p>
+                            </div>
+                            <img src="./dan-moj.png" class="w-full aspect-square rounded-2xl object-cover ">
+                        </div>
+
+                        <div class="flex flex-col justify-between gap-4">
+                            <div class="flex flex-col gap-4">
+                                <h2 class=" text-2xl text-white">UI</h2>
+                                <p>
+                                    It is simple in looks, but hand designed with animations that make them fun and
+                                    intuitive.
+                                </p>
+                            </div>
+
+                            <img src="./dan-moj.png" class="w-full aspect-square rounded-2xl object-cover">
+                        </div>
+
+                    </div>
+
+                    <h2 class="font-semibold text-4xl text-white mt-6">Game Design & Code</h2>
+                    <div class="grid grid-cols-2 gap-8 gap-y-16 items-stretch auto-rows-max">
+                        <div class="flex flex-col gap-4">
+                            <h2 class=" text-2xl text-white">Player</h2>
+                            <p>
+                                The player controls are the most complicated as they do all the movement, shooting, camera controls and inventory system. The character is fast and responsive and takes priority over everything else performance wise.
+                            </p>
+                            <h2 class=" text-2xl text-white">Enemies and Spawning</h2>
+                            <p>
+                                2 types of enemies with different kind of AI. Navigation Mesh Agent based regular zombies and Custom Physics based fat rolling zombies.
+                            </p>
+                            <h2 class=" text-2xl text-white">Optimization</h2>
+                            <p>
+                                For an Agent based AI to run smoothly I have implemented multiple features.There is a Zombie Manager object that controls all the enemies, it runs on a separate thread for best performance, it also manages spawning and de-spawning of enemies, so only the ones near the players view are working, they de-spawn depending on the distance from the player and new ones are spawned when needed.
+                            </p>
+                            <h2 class=" text-2xl text-white">Spawning</h2>
+                            <p>I made a custom tool for Unity Editor which allows the level designer to easily place and manipulate spawn points for enemies. Their size and difficulty level can be changed, with visual feedback for Level Designers.</p>
+                        </div>
+
+                        <img src="./dan-moj.png" class="w-full aspect-square rounded-2xl object-cover self-start">
+
+
+                    </div>
+                    <h2 class="font-semibold text-4xl text-white mt-6">Made with Forward Planning</h2>
+                    <p>Enemies, weapons, pick ups, Player, everything is made with forward planning. Everything is modular and made with proper Object Oriented approach.This allows adding features to be fast, easy and as painless as possible!</p>
+                    <div class="flex w-full justify-center gap-2 py-4">
+                        <a href="#"
+                            class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 outline outline-1 outline-woodsmoke-900 hover:outline-woodsmoke-400 hover:bg-woodsmoke-900">
+                            <img src="../../img/icons/github.svg" alt="" class="w-6">
+                            GitHub
+                        </a>
+                        <a href="#"
+                            class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 bg-jungle-green-700 hover:bg-jungle-green-400">
+                            Download Game
+                        </a>
+                    </div>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+<style>
+    .nj-anim {
+        animation: 3s ease-in-out 1s infinite alternate both running image;
+    }
+
+    @keyframes image {
+        from {
+            width: 20%;
+        }
+
+        to {
+            width: 80%;
+        }
+    }
+</style>
+
+</html>
