@@ -61,15 +61,18 @@
                     <div class="flex gap-2 *:bg-jungle-green-950 text-jungle-green-300 *:px-3 *:py-1 *:rounded-full">
 
                         <div class="flex gap-2">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-jungle-green-300"  viewBox="0 0 512 512">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-jungle-green-300"
+                                viewBox="0 0 512 512">
                                 <!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
-                                <path d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
-                                
+                                <path
+                                    d="M448 256c0-106-86-192-192-192V448c106 0 192-86 192-192zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z" />
+                            </svg>
+
                             Graphics
                         </div>
                         <div class="flex gap-2">University</div>
                     </div>
-                    <img src="./chase.png" alt="" class="rounded-xl w-full h-96 object-cover">
+                    <img src="./cover.png" alt="" class="rounded-xl w-full h-96 object-cover">
                 </div>
                 <div class="flex flex-col gap-8 max-w-4xl">
                     <span>
@@ -86,10 +89,10 @@
 
                     <h2 class="font-semibold text-4xl text-white">Goals</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 items-stretch auto-rows-max">
-                        <div class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:hidden">
-                            <img src="./noc-moj.png"
-                                class="w-full h-full aspect-square absolute object-left object-cover">
-                            <img src="./dan-moj.png"
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:hidden">
+                            <img src="./crt1.png" class="w-full h-full aspect-square absolute object-left object-cover">
+                            <img src="./crt2.png"
                                 class="w-1/5 h-full aspect-square absolute object-left object-cover nj-anim">
                         </div>
                         <div class="flex flex-col gap-4 col-span-1 md:col-span-2 lg:col-span-1">
@@ -100,25 +103,28 @@
                                 have a custom grid that is rendered one line after the other.
                             </p>
                             <p>
-                                Many CRT displays dont even follow a standard grid system, and each have their own arrangement
+                                Many CRT displays dont even follow a standard grid system, and each have their own
+                                arrangement
                             </p>
                             <p>
-                                What makes them even more odd is that they are much larger than LED pixels, and CRT "pixels" are 
-                                just like LED pixels composed of sub-pixels, which in CRT displays oftem make then not even a square 
+                                What makes them even more odd is that they are much larger than LED pixels, and CRT
+                                "pixels" are
+                                just like LED pixels composed of sub-pixels, which in CRT displays oftem make then not
+                                even a square
                                 and with larger gaps between pixels.
                             </p>
                         </div>
 
-                        <div class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:flex hidden">
-                            <img src="./noc-moj.png"
-                                class="w-full h-full aspect-square absolute object-left object-cover">
-                            <img src="./dan-moj.png"
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:flex hidden">
+                            <img src="./crt1.png" class="w-full h-full aspect-square absolute object-left object-cover">
+                            <img src="./crt2.png"
                                 class="w-1/5 h-full aspect-square absolute object-left object-cover nj-anim">
                         </div>
                     </div>
 
-                        <h2 class="font-semibold text-4xl text-white">How to Achieve it?</h2>
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 items-stretch auto-rows-max">
+                    <h2 class="font-semibold text-4xl text-white">How to Achieve it?</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 items-stretch auto-rows-max">
                         <!-- ROW -->
 
                         <div class="flex flex-col justify-between gap-4">
@@ -126,61 +132,91 @@
                                 <h2 class=" text-2xl text-white">Pixels</h2>
                                 <p>
                                     I created a texture for a pixel, using RGB channels for the subpixels.
-                                    They are sligthly overlapping to allow for the nice visual of a white color when all color channels are at use.
+                                    They are sligthly overlapping to allow for the nice visual of a white color when all
+                                    color channels are at use.
                                 </p>
                             </div>
-                            <img src="./dan-moj.png" class="w-full aspect-square rounded-2xl object-cover ">
+                            <img src="./pixel2.png" class="w-full aspect-square rounded-2xl object-cover ">
                         </div>
 
                         <div class="flex flex-col justify-between gap-4">
                             <div class="flex flex-col gap-4">
                                 <h2 class=" text-2xl text-white">Creating a basic Grid</h2>
                                 <p>
-                                    I am rendering a scene as a texture that i am simply multiplying with a grid of pixels, this already looks nice.
+                                    I am rendering a scene as a texture that i am simply multiplying with a grid of
+                                    pixels, this already looks nice.
                                 </p>
                             </div>
 
-                            <img src="./dan-moj.png" class="w-full aspect-square rounded-2xl object-cover">
+                            <img src="./simple grid.png" class="w-full aspect-square rounded-2xl object-cover">
                         </div>
 
                         <!-- ROW -->
-                         </div>
-                         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 items-stretch auto-rows-max">
-                            <div class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:hidden">
-                                <img src="./noc-moj.png"
-                                    class="w-full h-full aspect-square absolute object-left object-cover">
-                            </div>
-                            <div class="flex flex-col gap-4 col-span-1 md:col-span-2 lg:col-span-1">
-                                <h2 class=" text-2xl text-white">Custom Grid</h2>
-                                <p>
-                                    Old school CRT displays work in a very different way than modern LED displays.
-                                    Instead of having a grid of pixels that are all drawn at the same time, CRT screens
-                                    have a custom grid that is rendered one line after the other.
-                                </p>
-                                <p>
-                                    Many CRT displays dont even follow a standard grid system, and each have their own arrangement
-                                </p>
-                                <p>
-                                    What makes them even more odd is that they are much larger than LED pixels, and CRT "pixels" are 
-                                    just like LED pixels composed of sub-pixels, which in CRT displays oftem make then not even a square 
-                                    and with larger gaps between pixels.
-                                </p>
-                            </div>
-    
-                            <div class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:flex hidden">
-                                <img src="./noc-moj.png"
-                                    class="w-full h-full aspect-square absolute object-left object-cover">
-                            </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 items-stretch auto-rows-max">
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:hidden">
+                            <img src="./noc-moj.png"
+                                class="w-full h-full aspect-square absolute object-left object-cover">
+                        </div>
+                        <div class="flex flex-col gap-4 col-span-1 md:col-span-2 lg:col-span-1">
+                            <h2 class=" text-2xl text-white">Custom Grid</h2>
+                            <p>
+                                Old school CRT displays work in a very different way than modern LED displays.
+                                Instead of having a grid of pixels that are all drawn at the same time, CRT screens
+                                have a custom grid that is rendered one line after the other.
+                            </p>
+                            <p>
+                                Many CRT displays dont even follow a standard grid system, and each have their own
+                                arrangement
+                            </p>
+                            <p>
+                                What makes them even more odd is that they are much larger than LED pixels, and CRT
+                                "pixels" are
+                                just like LED pixels composed of sub-pixels, which in CRT displays oftem make then not
+                                even a square
+                                and with larger gaps between pixels.
+                            </p>
+                        </div>
+
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:flex hidden">
+                            <img src="./splitter.png"
+                                class="w-full h-full aspect-square absolute object-left object-cover">
+                        </div>
+                    </div>
+                    <h2 class="font-semibold text-4xl text-white">Game Art</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 items-stretch auto-rows-max">
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1">
+                            <img src="./crt2.png" class="w-full h-full aspect-square absolute object-cover">
+                        </div>
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1">
+                            <img src="./art1.png" class="w-full h-full aspect-square absolute object-cover">
+                        </div>
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1">
+                            <img src="./art3.png" class="w-full h-full aspect-square absolute object-cover">
+                        </div>
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1">
+                            <img src="./art4.png" class="w-full h-full aspect-square absolute object-cover">
+                        </div>
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1">
+                            <img src="./art5.png" class="w-full h-full aspect-square absolute object-cover">
                         </div>
                     </div>
 
+
+                </div>
+
+
+
             </div>
 
-
-
         </div>
-
-    </div>
 </body>
 <style>
     .nj-anim {
