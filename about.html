@@ -5,133 +5,183 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/output.css">
-    <title>Document</title>
+    <title>Nebojša Jeremić Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./img/logo.png">
 </head>
 
 <body class=" bg-[#0C0C0C] w-full h-screen font-Quicksand text-white">
-    <div class="flex h-full w-full">
+    <div class="flex md:flex-row flex-col h-full w-full">
         <!-- SIDE NAV -->
-        <div class="min-w-60 h-svh fixed top-0 w-60 bg-woodsmoke-950 p-6 flex flex-col justify-between">
-            <div class="flex flex-col gap-2">
-                <img src="./img/logo.png" alt="" class="w-full">
-                <a href="./index.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
-                hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
+        <div
+            class="lg:w-60 md:w-48 w-full md:h-svh h-20 fixed md:top-0 bottom-0 left-0 bg-woodsmoke-950 md:p-6 p-2 flex flex-col md:justify-between justify-center items-center z-10">
+            <div class="flex md:flex-col flex-row gap-2 w-full justify-evenly">
+                <img src="./img/logo.png" alt="" class="md:w-full md:block hidden">
+                <a href="./index.html" class="md:w-full p-3 flex md:flex-row flex-col items-center md:gap-3 text-white text-lg rounded-2xl transition-all duration-150 md:hover:bg-jungle-green-950 border border-transparent md:hover:border-jungle-green-700
+                ">
                     <img src="./img/icons/home.svg" alt="">
                     Home
                 </a>
-                <a href="./projects.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
-                hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
+                <a href="./projects.html"
+                    class="md:w-full p-3 flex md:flex-row flex-col items-center md:gap-3 text-white text-lg rounded-2xl transition-all duration-150 md:hover:bg-jungle-green-950 border border-transparent md:hover:border-jungle-green-700">
                     <img src="./img/icons/gamepad.svg" alt="">
                     Projects
                 </a>
-                <a href="#" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
-                hover:bg-jungle-green-950 border hover:border-jungle-green-500
-                bg-gradient-to-r from-jungle-green-600 to-transparent border-jungle-green-500">
+                <a href="./about.html" class="md:w-full p-3 flex md:flex-row flex-col items-center md:gap-3 text-white text-lg rounded-2xl transition-all duration-150
+                md:bg-gradient-to-r md:from-jungle-green-600 md:to-transparent md:border-jungle-green-500
+                md:border
+                md:drop-shadow-none drop-shadow-[0_4px_12px_#f0fdf9] border-transparent bg-transparent">
                     <img src="./img/icons/user-alt.svg" alt="">
                     About
                 </a>
             </div>
 
-            <div class="flex justify-between">
-                <a href="./about"
+            <div class="md:flex lg:flex-row flex-col hidden justify-between">
+                <!-- <a href="#"
                     class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
                     <img src="./img/icons/instagram.svg" alt="">
-                </a>
-                <a href="#"
+                </a> -->
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/neboj%C5%A1a-jeremi%C4%87-097b4a33a/"
                     class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
                     <img src="./img/icons/linkedin.svg" alt="">
                 </a>
-                <a href="#"
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Njegosh"
                     class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
                     <img src="./img/icons/github.svg" alt="">
                 </a>
             </div>
         </div>
-        <div class="min-w-60 h-svh top-0 w-60 bg-woodsmoke-950">
-        </div>
+
+        <!-- <div class="min-w-60 h-svh top-0 w-60 bg-woodsmoke-950">
+        </div> -->
+
         <!-- CONTENT -->
-        <div class="flex w-full h-full p-12 gap-8 flex-col font-thin text-woodsmoke-400 mb-44">
+        <div class="lg:pl-72 md:pl-56 pb-40 flex w-full h-fit p-12 flex-col font-thin text-woodsmoke-400">
             <div class="flex gap-8 flex-col pb-40">
-            <div class="flex flex-col gap-4">
-                <span class="font-semibold text-4xl text-white">Nebojša Jeremić</span>
-
-                <span class="text-xl"><b class="text-jungle-green-400">Programmer</b> in mind and <b class="text-jungle-green-400">Artist</b> in heart</span>
-
-
-                <span>Fascinated by computer graphics. <br>Always wanting to break the barrier between the artist and
-                    computer capabilities.</span>
-
-                <span>I specialize in using existing tools or
-                    making new ones for creating beautiful experiances.</span>
-            </div>
-
-            <hr>
-
-            <div class="flex flex-col gap-4">
-                <span class="font-semibold text-xl text-white">Education</span>
-
-                <div class="flex flex-col">
-                    <span class="font-semibold text-jungle-green-400">Batchelors of Digital Arts</span>
-                    <span>Univerzitet Metropolitan, Belgrade Serbia  -  2024</span>
+                <div class="md:hidden flex relative justify-center w-full h-52" style="perspective: 2000px;">
+                    <div class="absolute p-2 spin-anim-1 origin-center">
+                        <img src="./img/logo.png" alt="" class="flex max-w-40">
+                    </div>
+                    <div class="absolute p-2 spin-anim-2 origin-center">
+                        <img src="./img/ja.jpg" alt="" class="rounded-full overflow-hidden flex max-w-40">
+                    </div>
                 </div>
 
-                <span class="font-semibold text-xl text-white">Experiance</span>
+                <div class="flex flex-col gap-4">
+                    <span class="font-semibold text-4xl text-white">Nebojša Jeremić</span>
 
-                <div class="flex flex-col">
-                    <span class="font-semibold text-jungle-green-400">LeboApps</span>
-                    <span>Web Developer  -  2024 - present</span>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-semibold text-jungle-green-400">SystemPro</span>
-                    <span>Programming course Teacher  -  2020 - 2024</span>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-semibold text-jungle-green-400">Freelance</span>
-                    <span>Web Developer  -  2019 - 2020</span>
-                </div>
-                <div class="flex flex-col">
-                    <span class="font-semibold text-jungle-green-400">Freelance</span>
-                    <span>3D modeling & Texturing  -  2017 - 2019</span>
+                    <span class="text-xl"><b class="text-jungle-green-400">Programmer</b> in mind and <b
+                            class="text-jungle-green-400">Artist</b> in heart</span>
+
+
+                    <span>Fascinated by computer graphics. <br>Always wanting to break the barrier between the artist
+                        and
+                        computer capabilities.</span>
+
+                    <span>I specialize in using existing tools or
+                        making new ones for creating beautiful experiances.</span>
                 </div>
 
-            </div>
+                <hr>
 
-            <hr>
+                <div class="flex flex-col gap-4">
+                    <span class="font-semibold text-xl text-white">Education</span>
 
-            <div class="grid grid-flow-row grid-cols-2 w-full">
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-jungle-green-400">Batchelors of Digital Arts</span>
+                        <span>Univerzitet Metropolitan, Belgrade Serbia - 2024</span>
+                    </div>
 
-                <div class="flex flex-col">
-                    <span class="font-semibold text-xl text-white">Software</span>
-                    <ul>
-                        <li>Unity - Game Engine</li>
-                        <li>Godot - Game Engine</li>
-                        <li>Blender - 3D Modeling</li>
-                        <li>Substance Painter - Texture Painting</li>
-                        <li>Nomad Sculpt - 3D Sculpting</li>
-                        <li>Krita, ProCreate - 2D Art</li>
-                        <li>After Effects - 2D Animation and Motion Graphfics</li>
-                        <li>Figma - UI/UX Design</li>
-                    </ul>
+                    <span class="font-semibold text-xl text-white">Experiance</span>
+
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-jungle-green-400">LeboApps</span>
+                        <span>Front-End Web Developer - 2023 - 2025</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-jungle-green-400">SystemPro</span>
+                        <span>Programming course Teacher - 2020 - 2024</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-jungle-green-400">Freelance</span>
+                        <span>Web Developer - 2019 - 2020</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-jungle-green-400">Freelance</span>
+                        <span>3D modeling & Texturing - 2017 - 2019</span>
+                    </div>
+
                 </div>
 
-                <div class="flex flex-col">
-                    <span class="font-semibold text-xl text-white">Coding</span>
-                    <ul>
-                        <li>C#</li>
-                        <li>C++</li>
-                        <li>JavaScript</li>
-                        <li>Java</li>
-                        <li>Python</li>
-                    </ul>
+                <hr>
+
+                <div class="grid grid-flow-row grid-cols-2 w-full">
+
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-xl text-white">Software</span>
+                        <ul>
+                            <li>Unity - Game Engine</li>
+                            <li>Godot - Game Engine</li>
+                            <li>Blender - 3D Modeling</li>
+                            <li>Substance Painter - Texture Painting</li>
+                            <li>Nomad Sculpt - 3D Sculpting</li>
+                            <li>Krita, ProCreate - 2D Art</li>
+                            <li>After Effects - 2D Animation and Motion Graphfics</li>
+                            <li>Figma - UI/UX Design</li>
+                        </ul>
+                    </div>
+
+                    <div class="flex flex-col">
+                        <span class="font-semibold text-xl text-white">Coding</span>
+                        <ul>
+                            <li>C#</li>
+                            <li>C++</li>
+                            <li>JavaScript</li>
+                            <li>Java</li>
+                            <li>Python</li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
-                
-    </div>
 
     </div>
 </body>
+<style>
+    .spin-anim-1 {
+        animation: 6s ease-in 2s infinite alternate both running image1;
+        /* animation: 3s ease-in-out 1s infinite alternate both running image1; */
+    }
 
+    @keyframes image1 {
+        0%, 45% {
+            transform: rotate3d(0, 1, 0, 0deg) scale(1);
+            filter: blur(0);
+        }
+
+        50%, 100% {
+            transform: rotate3d(0, 1, 0, 90deg) scale(1.1);
+            filter: blur(0.1rem);
+        }
+    }
+
+    .spin-anim-2 {
+        animation: 6s ease-out 2s infinite alternate both running image2;
+    }
+
+    @keyframes image2 {
+        0%, 50% {
+            transform: rotate3d(0, 1, 0, -90deg) scale(1.1);
+            filter: blur(0.1rem);
+        }
+
+        55%, 100% {
+            transform: rotate3d(0, 1, 0, 0deg) scale(1);
+            filter: blur(0);
+        }
+    }
+</style>
 </html>

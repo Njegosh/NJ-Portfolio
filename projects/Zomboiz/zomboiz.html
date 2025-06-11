@@ -5,53 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../css/output.css">
-    <title>Document</title>
+    <title>ZomboiZ - Nebojša Jeremić</title>
+    <link rel="icon" type="image/x-icon" href="../../img/logo.png">
 </head>
 
 <body class=" bg-[#0C0C0C] w-full h-screen font-Quicksand text-white">
-    <div class="flex h-full w-full">
+    <div class="flex md:flex-row flex-col h-full w-full">
         <!-- SIDE NAV -->
-        <div class="min-w-60 h-svh fixed top-0 w-60 bg-woodsmoke-950 p-6 flex flex-col justify-between">
-            <div class="flex flex-col gap-2">
-                <img src="../../img/logo.png" alt="" class="w-full">
-                <a href="../../index.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
-                hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
+        <div
+            class="lg:w-60 md:w-48 w-full md:h-svh h-20 fixed md:top-0 bottom-0 left-0 bg-woodsmoke-950 md:p-6 p-2 flex flex-col md:justify-between justify-center items-center z-10">
+            <div class="flex md:flex-col flex-row gap-2 w-full justify-evenly">
+                <img src="../../img/logo.png" alt="" class="md:w-full md:block hidden">
+                <a href="../../index.html" class="md:w-full p-3 flex md:flex-row flex-col items-center md:gap-3 text-white text-lg rounded-2xl transition-all duration-150
+                md:bg-gradient-to-r md:from-jungle-green-600 md:to-transparent md:border-jungle-green-500
+                md:border
+                md:drop-shadow-none drop-shadow-[0_4px_12px_#f0fdf9] border-transparent bg-transparent
+                ">
                     <img src="../../img/icons/home.svg" alt="">
                     Home
                 </a>
-                <a href="../../projects.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
-                hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
+                <a href="../../projects.html"
+                    class="md:w-full p-3 flex md:flex-row flex-col items-center md:gap-3 text-white text-lg rounded-2xl transition-all duration-150 md:hover:bg-jungle-green-950 border border-transparent md:hover:border-jungle-green-700">
                     <img src="../../img/icons/gamepad.svg" alt="">
                     Projects
                 </a>
-                <a href="../../about.html" class="w-full p-3 flex gap-3 text-white text-lg rounded-2xl transition-all duration-150
-                hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
+                <a href="../../about.html"
+                    class="md:w-full p-3 flex md:flex-row flex-col items-center md:gap-3 text-white text-lg rounded-2xl transition-all duration-150 hover:bg-jungle-green-950 border border-transparent hover:border-jungle-green-700">
                     <img src="../../img/icons/user-alt.svg" alt="">
                     About
                 </a>
             </div>
 
-            <div class="flex justify-between">
-                <a href="#"
+            <div class="md:flex lg:flex-row flex-col hidden justify-between">
+                <!-- <a href="#"
                     class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
-                    <img src="../../img/icons/instagram.svg" alt="">
-                </a>
-                <a href="#"
+                    <img src="./img/icons/instagram.svg" alt="">
+                </a> -->
+                <a target="_blank" rel="noopener noreferrer"
+                    href="https://www.linkedin.com/in/neboj%C5%A1a-jeremi%C4%87-097b4a33a/"
                     class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
                     <img src="../../img/icons/linkedin.svg" alt="">
                 </a>
-                <a href="#"
+                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Njegosh"
                     class="p-3 rounded-xl hover:bg-woodsmoke-900 hover:border-woodsmoke-700 border border-transparent transition-all duration-75">
                     <img src="../../img/icons/github.svg" alt="">
                 </a>
             </div>
         </div>
 
-        <div class="min-w-60 h-svh top-0 w-60 bg-woodsmoke-950">
-        </div>
+        <!-- <div class="min-w-60 h-svh top-0 w-60 bg-woodsmoke-950">
+        </div> -->
 
         <!-- CONTENT -->
-        <div class="flex w-full h-full p-12 gap-8 flex-col font-thin text-woodsmoke-400">
+        <div class="lg:pl-72 md:pl-56 pb-40 flex w-full h-fit p-12 flex-col font-thin text-woodsmoke-400">
             <div class="flex flex-col gap-4 items-center pb-40">
                 <div class="flex flex-col gap-4 w-full">
                     <div class="flex justify-between">
@@ -93,7 +99,7 @@
                     </span>
 
                     <div class="flex w-full justify-center gap-2 py-4">
-                        <a href="#"
+                        <a href="https://github.com/Njegosh/Zombilator"  target="_blank" rel="noopener noreferrer"
                             class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 outline outline-1 outline-woodsmoke-900 hover:outline-woodsmoke-400 hover:bg-woodsmoke-900">
                             <img src="../../img/icons/github.svg" alt="" class="w-6">
                             GitHub
