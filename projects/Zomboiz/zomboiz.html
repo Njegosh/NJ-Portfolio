@@ -16,7 +16,8 @@
             class="lg:w-60 md:w-48 w-full md:h-svh h-20 fixed md:top-0 bottom-0 left-0 bg-woodsmoke-950 md:p-6 p-2 flex flex-col md:justify-between justify-center items-center z-10">
             <div class="flex md:flex-col flex-row gap-2 w-full justify-evenly">
                 <img src="../../img/logo.png" alt="" class="md:w-full md:block hidden">
-                <a href="../../index.html" class="md:w-full p-3 flex md:flex-row flex-col items-center md:gap-3 text-white text-lg rounded-2xl transition-all duration-150 md:hover:bg-jungle-green-950 border border-transparent md:hover:border-jungle-green-700">
+                <a href="../../index.html"
+                    class="md:w-full p-3 flex md:flex-row flex-col items-center md:gap-3 text-white text-lg rounded-2xl transition-all duration-150 md:hover:bg-jungle-green-950 border border-transparent md:hover:border-jungle-green-700">
                     <img src="../../img/icons/home.svg" alt="">
                     Home
                 </a>
@@ -53,7 +54,7 @@
         </div> -->
 
         <!-- CONTENT -->
-        <div class="lg:pl-72 md:pl-56 pb-40 flex w-full h-fit md:p-12 p-6 flex-col font-thin text-woodsmoke-400">
+        <div class="lg:pl-72 md:pl-56 pb-40 flex w-full h-fit md:p-12 p-6 flex-col font-normal text-woodsmoke-400">
             <div class="flex flex-col gap-4 items-center pb-40">
                 <div class="flex flex-col gap-4 w-full">
                     <div class="flex justify-between">
@@ -95,20 +96,21 @@
                     </span>
 
                     <div class="flex flex-wrap w-full justify-center gap-2 py-4">
-                        <a href="https://github.com/Njegosh/Zombilator"  target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/Njegosh/Zombilator" target="_blank" rel="noopener noreferrer"
                             class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 outline outline-1 outline-woodsmoke-900 hover:outline-woodsmoke-400 hover:bg-woodsmoke-900">
                             <img src="../../img/icons/github.svg" alt="" class="w-6">
                             GitHub
                         </a>
                         <a href="https://njegoshdev.itch.io/zomboiz-survive" target="_blank" rel="noopener noreferrer"
-                            class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 bg-jungle-green-700 hover:bg-jungle-green-400">
+                            class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 bg-jungle-green-700 hover:bg-jungle-green-400 hover:shadow-lg hover:shadow-jungle-green-800">
                             Download Game
                         </a>
                     </div>
 
                     <h2 class="font-semibold text-4xl text-white">Visuals</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 items-stretch auto-rows-max">
-                        <div class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:hidden">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16 lg:gap-y-8 items-stretch auto-rows-max">
+                        <div
+                            class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:hidden">
                             <img src="./noc-moj.png"
                                 class="w-full h-full aspect-square absolute object-left object-cover">
                             <img src="./dan-moj.png"
@@ -118,7 +120,8 @@
                             <h2 class=" text-2xl text-white">Materials & Shaders</h2>
                             <p>
                                 To make all characters appealing and to make them stand out I made a custom shader using
-                                Shader Graph and Code. The characters have a Rim Light that reacts to lighting around
+                                <b class="font-bold">Shader Graph</b> and <b class="font-bold">Code</b>. The characters
+                                have a Rim Light that reacts to lighting around
                                 them.
                                 It works great with Day and Night System, various light sources from street lights to
                                 explosions in combat.
@@ -132,6 +135,7 @@
                                 black
                                 outline around them, with GPU instancing the performance is easily obtained.
                             </p>
+
                         </div>
 
                         <div class="w-full self-start aspect-square relative rounded-2xl overflow-hidden col-span-1 md:col-span-2 lg:col-span-1 lg:flex hidden">
@@ -139,6 +143,20 @@
                                 class="w-full h-full aspect-square absolute object-left object-cover">
                             <img src="./dan-moj.png"
                                 class="w-1/5 h-full aspect-square absolute object-left object-cover nj-anim">
+                        </div>
+
+                        <div class="flex flex-col gap-4 col-span-2">
+                            <h2 class=" text-2xl text-white">Shaders</h2>
+                            <p>
+                                For this shading style I was required to alter the lighting model, so I made a custom lighting function that is used in the shader graph.
+                                I wrote custom functions for Specular Lights, both with one source and multiple light sources, which both use the shadowcacher.
+
+                                These are used so the Rim Light can react to the lighting around the characters in a high level of developer control.
+                            </p>
+                            
+                        <img src="./shader-code.png" class="w-full h-80 rounded-2xl object-cover">
+                        <img src="./shader-graph.png" class="w-full h-80 rounded-2xl object-cover">
+
                         </div>
 
                         <!-- ROW -->
@@ -151,7 +169,8 @@
                                     other effects that make the action feel flashy.
                                 </p>
                             </div>
-                            <video src="./day n night.mp4" class="w-full aspect-square rounded-2xl object-cover " loop autoplay muted></video>
+                            <video src="./day n night.mp4" class="w-full aspect-square rounded-2xl object-cover " loop
+                                autoplay muted></video>
                         </div>
 
                         <div class="flex flex-col justify-between gap-4">
@@ -164,7 +183,8 @@
                                 </p>
                             </div>
 
-                            <video src="./vfx.mp4" class="w-full aspect-square rounded-2xl object-cover " loop autoplay muted></video>
+                            <video src="./vfx.mp4" class="w-full aspect-square rounded-2xl object-cover " loop autoplay
+                                muted></video>
                         </div>
 
                         <!-- ROW -->
@@ -178,7 +198,8 @@
                                     with animation layers.
                                 </p>
                             </div>
-                            <video src="./anim.mp4" class="w-full aspect-square rounded-2xl object-cover " loop autoplay muted></video>
+                            <video src="./anim.mp4" class="w-full aspect-square rounded-2xl object-cover " loop autoplay
+                                muted></video>
                         </div>
 
                         <div class="flex flex-col justify-between gap-4">
@@ -189,7 +210,8 @@
                                     intuitive.
                                 </p>
                             </div>
-                            <video src="./UI OH GOD.mp4" class="w-full aspect-square rounded-2xl object-cover " loop autoplay muted></video>
+                            <video src="./UI OH GOD.mp4" class="w-full aspect-square rounded-2xl object-cover " loop
+                                autoplay muted></video>
                         </div>
 
                     </div>
@@ -199,44 +221,56 @@
                         <div class="flex flex-col gap-4">
                             <h2 class=" text-2xl text-white">Player</h2>
                             <p>
-                                The player controls are the most complicated as they do all the movement, shooting, camera controls and inventory system. The character is fast and responsive and takes priority over everything else performance wise.
+                                The player controls are the most complicated as they do all the movement, shooting,
+                                camera controls and inventory system. The character is fast and responsive and takes
+                                priority over everything else performance wise.
                             </p>
                             <h2 class=" text-2xl text-white">Enemies and Spawning</h2>
                             <p>
-                                2 types of enemies with different kind of AI. Navigation Mesh Agent based regular zombies and Custom Physics based fat rolling zombies.
+                                2 types of enemies with different kind of AI. Navigation Mesh Agent based regular
+                                zombies and Custom Physics based fat rolling zombies.
                             </p>
                             <h2 class=" text-2xl text-white">Optimization</h2>
                             <p>
-                                For an Agent based AI to run smoothly I have implemented multiple features.There is a Zombie Manager object that controls all the enemies, it runs on a separate thread for best performance, it also manages spawning and de-spawning of enemies, so only the ones near the players view are working, they de-spawn depending on the distance from the player and new ones are spawned when needed.
+                                For an Agent based AI to run smoothly I have implemented multiple features.There is a
+                                Zombie Manager object that controls all the enemies, it runs on a separate thread for
+                                best performance, it also manages spawning and de-spawning of enemies, so only the ones
+                                near the players view are working, they de-spawn depending on the distance from the
+                                player and new ones are spawned when needed.
                             </p>
                             <h2 class=" text-2xl text-white">Spawning</h2>
-                            <p>I made a custom tool for Unity Editor which allows the level designer to easily place and manipulate spawn points for enemies. Their size and difficulty level can be changed, with visual feedback for Level Designers.</p>
+                            <p>I made a custom tool for Unity Editor which allows the level designer to easily place and
+                                manipulate spawn points for enemies. Their size and difficulty level can be changed,
+                                with visual feedback for Level Designers.</p>
                         </div>
 
-                        <video src="./Engine.mp4" class="w-full aspect-square rounded-2xl object-cover " loop autoplay muted></video>
+                        <video src="./Engine.mp4" class="w-full aspect-square rounded-2xl object-cover " loop autoplay
+                            muted></video>
 
 
                     </div>
                     <h2 class="font-semibold text-4xl text-white mt-6">Made with Forward Planning</h2>
-                    <p>Enemies, weapons, pick ups, Player, everything is made with forward planning. Everything is modular and made with proper Object Oriented approach.This allows adding features to be fast, easy and as painless as possible!</p>
+                    <p>Enemies, weapons, pick ups, Player, everything is made with forward planning. Everything is
+                        modular and made with proper Object Oriented approach.This allows adding features to be fast,
+                        easy and as painless as possible!</p>
                     <div class="flex flex-wrap w-full justify-center gap-2 py-4">
-                        <a href="https://github.com/Njegosh/Zombilator"  target="_blank" rel="noopener noreferrer"
+                        <a href="https://github.com/Njegosh/Zombilator" target="_blank" rel="noopener noreferrer"
                             class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 outline outline-1 outline-woodsmoke-900 hover:outline-woodsmoke-400 hover:bg-woodsmoke-900">
                             <img src="../../img/icons/github.svg" alt="" class="w-6">
                             GitHub
                         </a>
-                        <a ref="https://njegoshdev.itch.io/zomboiz-survive" target="_blank" rel="noopener noreferrer"
-                            class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 bg-jungle-green-700 hover:bg-jungle-green-400">
+                        <a href="https://njegoshdev.itch.io/zomboiz-survive" target="_blank" rel="noopener noreferrer"
+                            class="flex gap-2 items-center py-2 px-4 rounded-xl font-medium text-lg text-white duration-100 bg-jungle-green-700 hover:bg-jungle-green-400 hover:shadow-lg hover:shadow-jungle-green-800">
                             Download Game
                         </a>
                     </div>
+                </div>
+
+
+
             </div>
 
-
-
         </div>
-
-    </div>
 </body>
 <style>
     .nj-anim {
